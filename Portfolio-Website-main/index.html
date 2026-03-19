@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bipul Singhaniya — Portfolio</title>
+  <meta name="description"
+    content="Portfolio website of a Computer Science Engineering student — projects, skills, achievements, and more." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===================== PAGE LOADER ===================== -->
+  <div id="page-loader" class="page-loader">
+    <div class="loader-content">
+      <div class="loader-logo"><i class="fa-solid fa-code"></i></div>
+      <div class="loader-bar">
+        <div class="loader-bar-fill"></div>
+      </div>
+      <p class="loader-text">Loading portfolio...</p>
+    </div>
+  </div>
+
+  <!-- ===================== CURSOR GLOW ===================== -->
+  <div id="cursor-glow" class="cursor-glow"></div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-icon"><i class="fa-solid fa-code"></i></span>
+        <span>BS<span class="logo-dot">.</span></span>
+      </a>
+
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="#hero" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> About</a></li>
+        <li><a href="#skills" class="nav-link"><i class="fa-solid fa-laptop-code"></i> Skills</a></li>
+        <li><a href="#projects" class="nav-link"><i class="fa-solid fa-diagram-project"></i> Projects</a></li>
+        <li><a href="#certificates" class="nav-link"><i class="fa-solid fa-certificate"></i> Certificates</a></li>
+        <li><a href="#achievements" class="nav-link"><i class="fa-solid fa-trophy"></i> Achievements</a></li>
+        <li><a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+        <li><a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero" class="hero">
+    <div class="hero-particles" id="hero-particles"></div>
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+      <div class="shape shape-5"></div>
+    </div>
+
+    <div class="hero-container reveal">
+      <div class="hero-image">
+        <div class="hero-image-wrapper">
+          <img src="assets/bppic.jpg" alt="Vivek Khan — Headshot" />
+          <div class="hero-image-ring"></div>
+          <div class="hero-image-ring ring-2"></div>
+          <div class="hero-status">
+            <span class="status-dot"></span> Open to work
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <p class="hero-greeting"><i class="fa-solid fa-hand-sparkles"></i> Hello, I'm</p>
+        <h1 class="hero-name">Bipul Singhaniya</h1>
+        <p class="hero-tagline">
+          <span id="typed-text" class="typed-text"></span>
+          <span class="typed-cursor">|</span>
+        </p>
+        <p class="hero-intro">Building autonomous AI systems and intelligent backend infrastructure.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> View My Work</a>
+          <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-paper-plane"></i> Get In Touch</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/bipulsinghaniya" target="_blank" aria-label="GitHub"><i
+              class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/bipul-singhaniya/" target="_blank" aria-label="LinkedIn"><i
+              class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:singhaniyabipul9@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll Down</span>
+    </a>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="title-icon"><i class="fa-solid fa-user"></i></span>
+        About <span class="gradient-text">Me</span>
+      </h2>
+      <div class="section-line"></div>
+
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <p>
+            I'm a <strong>Computer Science Engineering</strong> student at Lovely Professional University with a strong
+            interest in backend systems, AI agents, and scalable software development.
+          </p>
+          <p>
+            I enjoy building real-world applications — from autonomous AI frameworks and full-stack platforms to
+            computer vision systems — with a focus on clean architecture and reliable solutions.
+          </p>
+          <p>
+            Alongside development, I actively practice <strong>Data Structures & Algorithms</strong>, participating in
+            coding contests on LeetCode and Codeforces while continuously exploring new technologies and AI research.
+          </p>
+        </div>
+        <div class="about-highlights">
+          <div class="highlight-card" data-tilt>
+            <div class="card-glow"></div>
+            <i class="fa-solid fa-code"></i>
+            <h4>Clean Code</h4>
+            <p>Writing maintainable, scalable code</p>
+          </div>
+          <div class="highlight-card" data-tilt>
+            <div class="card-glow"></div>
+            <i class="fa-solid fa-brain"></i>
+            <h4>Algorithmic Problem Solving</h4>
+            <p>Competitive Programming/DSA</p>
+          </div>
+          <div class="highlight-card" data-tilt>
+            <div class="card-glow"></div>
+            <i class="fa-solid fa-robot"></i>
+            <h4>System Design</h4>
+            <p>Building scalable and distributed systems</p>
+          </div>
+          <div class="highlight-card" data-tilt>
+            <div class="card-glow"></div>
+            <i class="fa-solid fa-lightbulb"></i>
+            <h4>Curiosity</h4>
+            <p>Exploring new tech</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="title-icon"><i class="fa-solid fa-laptop-code"></i></span>
+        My <span class="gradient-text">Skills</span>
+      </h2>
+      <div class="section-line"></div>
+
+      <div class="skills-categories reveal">
+        <!-- Programming Languages -->
+        <div class="skill-category glass-card" data-tilt>
+          <div class="card-shine"></div>
+          <h3><i class="fa-solid fa-file-code"></i> Programming Languages</h3>
+          <div class="skill-items">
+            <div class="skill-chip"><i class="fa-solid fa-c"></i> C / C++</div>
+            <div class="skill-chip"><i class="fa-brands fa-js"></i> JavaScript</div>
+            <div class="skill-chip"><i class="fa-brands fa-java"></i> Java</div>
+            <div class="skill-chip"><i class="fa-brands fa-python"></i> Python</div>
+          </div>
+        </div>
+
+        <!-- Web Development -->
+        <div class="skill-category glass-card" data-tilt>
+          <div class="card-shine"></div>
+          <h3><i class="fa-solid fa-globe"></i> Web Development</h3>
+          <div class="skill-items">
+            <div class="skill-chip"><i class="fa-brands fa-html5"></i> HTML5</div>
+            <div class="skill-chip"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+            <div class="skill-chip"><i class="fa-brands fa-react"></i> React</div>
+            <div class="skill-chip"><i class="fa-brands fa-node-js"></i> Node.js</div>
+            <div class="skill-chip"><i class="fa-solid fa-server"></i> Express.js</div>
+            <div class="skill-chip"><i class="fa-solid fa-wind"></i> Tailwind CSS</div>
+            <div class="skill-chip"><i class="fa-brands fa-java"></i> Daisyui</div>
+          </div>
+        </div>
+
+        <!-- Tools & Technologies -->
+        <div class="skill-category glass-card" data-tilt>
+          <div class="card-shine"></div>
+          <h3><i class="fa-solid fa-screwdriver-wrench"></i> Tools & Technologies</h3>
+          <div class="skill-items">
+            <div class="skill-chip"><i class="fa-brands fa-git-alt"></i> Git & GitHub</div>
+            <div class="skill-chip"><i class="fa-brands fa-docker"></i> Docker</div>
+            <div class="skill-chip"><i class="fa-brands fa-figma"></i> Jenkins</div>
+            <div class="skill-chip"><i class="fa-brands fa-linux"></i> Linux</div>
+            <div class="skill-chip"><i class="fa-solid fa-terminal"></i> VS Code</div>
+            <div class="skill-chip"><i class="fa-brands fa-figma"></i> Figma</div>
+            <div class="skill-chip"><i class="fa-brands fa-figma"></i> Postman</div>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="skill-category glass-card" data-tilt>
+          <div class="card-shine"></div>
+          <h3><i class="fa-solid fa-database"></i> Databases</h3>
+          <div class="skill-items">
+            <div class="skill-chip"><i class="fa-solid fa-database"></i> MySQL</div>
+            <div class="skill-chip"><i class="fa-solid fa-leaf"></i> MongoDB</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="title-icon"><i class="fa-solid fa-diagram-project"></i></span>
+        Featured <span class="gradient-text">Projects</span>
+      </h2>
+      <div class="section-line"></div>
+
+      <div class="projects-grid reveal">
+        <!-- Project 1 -->
+        <div class="project-card glass-card" data-tilt>
+          <div class="project-image">
+            <img src="assets/pro1.png" alt="AI Chat Assistant" />
+          </div>
+          <div class="project-content">
+            <div class="project-card-top">
+              <div class="project-icon"><i class="fa-solid fa-brain"></i></div>
+              <div class="project-number">#01</div>
+            </div>
+            <h3>LPUQuora Platform</h3>
+            <p>Problem:- Students lack a centralized platform within the university to ask questions,  and get reliable answers from peers.<br>
+              Solution: Built a full-stack Q&A platform using React, Node.js, Express, and MongoDB with JWT-based authentication,  and real-time interaction features. <br>Result: Enabled students to ask, answer, and explore queries efficiently with a scalable system supporting secure authentication and structured knowledge sharing.</p>
+            <div class="project-tech">
+              <span>Python</span><span>APIs</span><span>LLMs</span><span>Memory</span>
+            </div>
+            <div class="project-links">
+              <a target="_blank" href="https://github.com/Vijay-Khantwal/AgenticAI-Project/tree/main"
+                class="btn btn-sm btn-primary"><i class="fa-brands fa-github"></i> GitHub</a>
+              <!-- <a href="#" class="btn btn-sm btn-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card glass-card" data-tilt>
+          <div class="project-image">
+            <img src="assets/pro2.png" alt="E-Commerce Platform" />
+          </div>
+          <div class="project-content">
+            <div class="project-card-top">
+              <div class="project-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+              <div class="project-number">#02</div>
+            </div>
+            <h3>AlgoJudge Coding Platform</h3>
+            <p>
+              Challenge: Students rely on ChatGPT and YouTube for debugging, leading to inefficient learning. <br>
+              Action: Built a coding platform integrating problems, code editor, bug-query system (“Where is my bug?”), and video explanations. <br>
+              Result: Enabled faster debugging, reduced dependency on external tools, and improved problem-solving efficiency.
+            </p>
+            <div class="project-tech">
+              <span>React</span><span>Node.js</span><span>MongoDB</span><span>Razorpay</span>
+            </div>
+            <div class="project-links">
+              <a target="_blank" href="https://github.com/Vijay-Khantwal/MultiLingual_ECommerce_Store_Project"
+                class="btn btn-sm btn-primary"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a target="_blank" href="https://multi-lingual-e-commerce-store-proj-ten.vercel.app/"
+                class="btn btn-sm btn-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card glass-card" data-tilt>
+          <div class="project-image">
+            <img src="assets/p3.png" alt="Weather Dashboard" />
+          </div>
+          <div class="project-content">
+            <div class="project-card-top">
+              <div class="project-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div class="project-number">#03</div>
+            </div>
+            <h3>Coursitory</h3>
+            <p>
+              Challenge: Learning platforms need intuitive interfaces for authentication, payments, and content access.
+              <br>
+              Action: Built a responsive frontend with user authentication, Google sign-in, secure course purchases, and
+              integrated video/PDF delivery. <br>
+              Result: Provided a seamless experience for discovering, purchasing, and consuming course content.
+            </p>
+            <div class="project-tech">
+              <span>React</span><span>Tailwind CSS</span><span>Spring Boot</span><span>MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a target="_blank" href="https://github.com/Vijay-Khantwal/Coursitory_React_Frontend"
+                class="btn btn-sm btn-primary"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a target="_blank" href="https://github.com/Vijay-Khantwal/Coursitory_React_Frontend"
+                class="btn btn-sm btn-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card glass-card" data-tilt>
+          <div class="project-image">
+            <img src="assets/p4.png" alt="Secure File Vault" />
+          </div>
+          <div class="project-content">
+            <div class="project-card-top">
+              <div class="project-icon"><i class="fa-solid fa-tree"></i></div>
+              <div class="project-number">#04</div>
+            </div>
+            <h3>Tree Detection System</h3>
+            <p>
+              Challenge: Manually analyzing tree distribution in aerial images is time-consuming and inefficient. <br>
+              Action: Developed a computer vision system using a trained Haar Cascade classifier to automatically detect
+              trees in aerial imagery. <br>
+              Result: Enabled automated tree identification for applications in forestry, urban planning, and
+              environmental monitoring.
+            </p>
+            <div class="project-tech">
+              <span>Python</span><span>OpenCV</span><span>Haar Cascade</span>
+            </div>
+            <div class="project-links">
+              <a target="_blank" href="https://github.com/Vijay-Khantwal/Tree-Detection-using-Cascade-File"
+                class="btn btn-sm btn-primary"><i class="fa-brands fa-github"></i> GitHub</a>
+              <!-- <a href="#" class="btn btn-sm btn-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+
+
+        <!-- Project 6 -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CERTIFICATES ===================== -->
+  <section id="certificates" class="section certificates">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="title-icon"><i class="fa-solid fa-certificate"></i></span>
+        My <span class="gradient-text">Certificates</span>
+      </h2>
+      <div class="section-line"></div>
+
+      <div class="cert-scroll reveal">
+        <div class="cert-card glass-card" data-tilt>
+          <div class="cert-image">
+            <img src="assets/cert1.png" alt="Cloud Computing" />
+          </div>
+          <div class="cert-content">
+            <div class="cert-badge"><i class="fa-solid fa-cloud"></i></div>
+            <h4>Cloud Computing</h4>
+            <p class="cert-org"><i class="fa-solid fa-building-columns"></i>NPTEL</p>
+            <p class="cert-date"><i class="fa-regular fa-calendar"></i> Apr 2025</p>
+            <a href="https://archive.nptel.ac.in/content/noc/NOC25/SEM1/Ecertificates/106/noc25-cs11/Course/NPTEL25CS11S153730278504252627.pdf"
+              class="btn btn-sm btn-outline btn-cert"><i class="fa-solid fa-arrow-up-right-from-square"></i> View
+              Certificate</a>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card" data-tilt>
+          <div class="cert-image">
+            <img src="assets/cert2.png" alt="Google Data Analytics" />
+          </div>
+          <div class="cert-content">
+            <div class="cert-badge"><i class="fa-solid fa-code"></i></div>
+            <h4>Mastering DSA</h4>
+            <p class="cert-org"><i class="fa-solid fa-building-columns"></i> SkillStone</p>
+            <p class="cert-date"><i class="fa-regular fa-calendar"></i> August 2025</p>
+            <a href="https://drive.google.com/file/d/1FGwAp65xk8KW8wjsABLmpZt0-meSLRFB/view"
+              class="btn btn-sm btn-outline btn-cert"><i class="fa-solid fa-arrow-up-right-from-square"></i> View
+              Certificate</a>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card" data-tilt>
+          <div class="cert-image">
+            <img src="assets/cert3.png" alt="Meta Front-End Developer" />
+          </div>
+          <div class="cert-content">
+            <div class="cert-badge"><i class="fa-solid fa-network-wired"></i></div>
+            <h4>Generative AI</h4>
+            <p class="cert-org"><i class="fa-solid fa-building-columns"></i> Oracle</p>
+            <p class="cert-date"><i class="fa-regular fa-calendar"></i> August 2025</p>
+            <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=E22223B4475E5D46BBF63812E9C6A1A2D44FCC3A89A913442C261A0A04431F56"
+              class="btn btn-sm btn-outline btn-cert"><i class="fa-solid fa-arrow-up-right-from-square"></i> View
+              Certificate</a>
+          </div>
+        </div>
+
+        <!-- <div class="cert-card glass-card" data-tilt>
+          <div class="cert-image">
+            <img src="assets/cert-placeholder.png" alt="Python for Data Science" />
+          </div>
+          <div class="cert-content">
+            <div class="cert-badge"><i class="fa-brands fa-python"></i></div>
+            <h4>Python for Data Science</h4>
+            <p class="cert-org"><i class="fa-solid fa-building-columns"></i> IBM — edX</p>
+            <p class="cert-date"><i class="fa-regular fa-calendar"></i> July 2024</p>
+            <a href="#" class="btn btn-sm btn-outline btn-cert"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Certificate</a>
+          </div>
+        </div> -->
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ACHIEVEMENTS ===================== -->
+  <section id="achievements" class="section achievements">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="title-icon"><i class="fa-solid fa-trophy"></i></span>
+        My <span class="gradient-text">Achievements</span>
+      </h2>
+      <div class="section-line"></div>
+
+      <div class="achievements-timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-dot">
+            <div class="timeline-icon"><i class="fa-solid fa-medal"></i></div>
+          </div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date"><i class="fa-regular fa-calendar"></i>March 2026</span>
+            <h4>Winner – Defend The Kingdom Hackathon (Infineon Technologies)</h4>
+            <p>Secured 1st place among multiple teams and won a cash prize of ₹15,000 by building an innovative solution under strict time constraints.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot">
+            <div class="timeline-icon"><i class="fa-solid fa-ranking-star"></i></div>
+          </div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date"><i class="fa-regular fa-calendar"></i> August 2024</span>
+            <h4>Top 5 – Graphs Contest (AlgoUniversity)</h4>
+            <p>Secured Rank 5 after completing an intensive Graph Algorithms bootcamp, demonstrating strong problem-solving and algorithmic skills. </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot">
+            <div class="timeline-icon"><i class="fa-solid fa-award"></i></div>
+          </div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date"><i class="fa-regular fa-calendar"></i> June 2024</span>
+            <h4>DSA Problem Solving (LeetCode & GeeksforGeeks)</h4>
+            <p>Solved 419+ problems on LeetCode and 120+ on GeeksforGeeks with a LeetCode rating of 1441 (Top ~66%).</p>
+          </div>
+        </div>
+
+        <!-- <div class="timeline-item">
+          <div class="timeline-dot">
+            <div class="timeline-icon"><i class="fa-solid fa-star"></i></div>
+          </div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date"><i class="fa-regular fa-calendar"></i> May 2024</span>
+            <h4>University Honor Roll</h4>
+            <p>Received University Honor Roll certificate for excellent academic performance at the 15th Honor ceremony
+            </p>
+          </div>
+        </div> -->
+
+        <!-- <div class="timeline-item">
+          <div class="timeline-dot">
+            <div class="timeline-icon"><i class="fa-solid fa-book"></i></div>
+          </div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date"><i class="fa-regular fa-calendar"></i> August 2020</span>
+            <h4>Top 10 in Uttarakhand</h4>
+            <p>Ranked Top 10 in Uttarakhand in Matriculation(2020), Top 3 in School in Senior Secondary(2022) </p>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION ===================== -->
+  <section id="education" class="section education">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="title-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+        My <span class="gradient-text">Education</span>
+      </h2>
+      <div class="section-line"></div>
+
+      <div class="education-timeline reveal">
+        <div class="edu-card glass-card" data-tilt>
+          <div class="edu-icon"><i class="fa-solid fa-university"></i></div>
+          <div class="edu-details">
+            <h4>B.Tech — Computer Science & Engineering</h4>
+            <p class="edu-school"><i class="fa-solid fa-location-dot"></i>Lovely Professional University, Punjab</p>
+            <p class="edu-year"><i class="fa-regular fa-calendar"></i> 2023 - 2027</p>
+            <p class="edu-grade"><i class="fa-solid fa-chart-line"></i> CGPA: 8.63 / 10</p>
+          </div>
+        </div>
+
+        <div class="edu-card glass-card" data-tilt>
+          <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+          <div class="edu-details">
+            <h4>Senior Secondary (XII) — Science</h4>
+            <p class="edu-school"><i class="fa-solid fa-location-dot"></i>PNK College </p>
+            <p class="edu-year"><i class="fa-regular fa-calendar"></i> 2021 - 2022</p>
+            <p class="edu-grade"><i class="fa-solid fa-chart-line"></i> CGPA: 8.00 / 10</p>
+          </div>
+        </div>
+
+        <div class="edu-card glass-card" data-tilt>
+          <div class="edu-icon"><i class="fa-solid fa-school-flag"></i></div>
+          <div class="edu-details">
+            <h4>Secondary (X)</h4>
+            <p class="edu-school"><i class="fa-solid fa-location-dot"></i>Shivam School, Patna</p>
+            <p class="edu-year"><i class="fa-regular fa-calendar"></i> 2019-2020</p>
+            <p class="edu-grade"><i class="fa-solid fa-chart-line"></i> CGPA: 9.00 / 10</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="title-icon"><i class="fa-solid fa-envelope"></i></span>
+        Get In <span class="gradient-text">Touch</span>
+      </h2>
+      <div class="section-line"></div>
+
+      <div class="contact-grid reveal">
+        <div class="contact-info">
+          <h3>Let's <span class="gradient-text">Connect</span></h3>
+          <p>I'm always open to discussing new projects, opportunities, or just a friendly chat about technology.</p>
+
+          <div class="contact-item glass-card">
+            <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:singhaniyabipul9@gmail.com">singhaniyabipul9@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item glass-card">
+            <div class="contact-item-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div>
+              <strong>LinkedIn</strong>
+              <a href="https://www.linkedin.com/in/bipul-singhaniya/" target="_blank">/in/bipul-singhaniya/</a>
+            </div>
+          </div>
+
+          <div class="contact-item glass-card">
+            <div class="contact-item-icon"><i class="fa-brands fa-github"></i></div>
+            <div>
+              <strong>GitHub</strong>
+              <a href="https://github.com/bipulsinghaniya" target="_blank">github.com/bipulsinghaniya</a>
+            </div>
+          </div>
+
+          <div class="contact-item glass-card">
+            <div class="contact-item-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:+919870904247">+91 9142415057</a>
+            </div>
+          </div>
+        </div>
+
+        <form id="contact-form" class="contact-form glass-card">
+          <div class="form-group">
+            <label for="name"><i class="fa-solid fa-user"></i> Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email"><i class="fa-solid fa-at"></i> Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required />
+          </div>
+          <div class="form-group">
+            <label for="message"><i class="fa-solid fa-message"></i> Your Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fa-solid fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DOWNLOAD CV ===================== -->
+  <section id="cv" class="section cv">
+    <div class="container cv-container reveal">
+      <div class="cv-content">
+        <div class="cv-icon-wrapper">
+          <i class="fa-solid fa-file-pdf cv-big-icon"></i>
+          <div class="cv-icon-pulse"></div>
+        </div>
+        <h2>Download My <span class="cv-gradient-text">Resume</span></h2>
+        <p>Get a comprehensive overview of my skills, experience, and achievements in a single document.</p>
+        <a href="assets/BipulSinghaniya.pdf" class="btn btn-cv" download>
+          <i class="fa-solid fa-download"></i> Download Resume / CV
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#hero" class="footer-logo"><i class="fa-solid fa-code"></i> Bipul Singhaniya</a>
+        <p>Building the future, one line of code at a time.</p>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://github.com/bipulsinghaniya" target="_blank" aria-label="GitHub"><i
+            class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/bipul-singhaniya/" target="_blank" aria-label="LinkedIn"><i
+            class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:singhaniyabipul9@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+
+      <p class="footer-copy">&copy; 2025 Bipul Singhaniya. Crafted with <i class="fa-solid fa-heart"
+          style="color:var(--coral);"></i> and lots of <i class="fa-solid fa-mug-hot" style="color:var(--accent);"></i>
+      </p>
+    </div>
+  </footer>
+
+  <!-- ===================== BACK TO TOP ===================== -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
