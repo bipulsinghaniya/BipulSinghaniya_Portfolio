@@ -1426,3 +1426,186 @@ img { max-width: 100%; display: block; }
   .hero-cta { flex-direction: column; align-items: center; }
   .hero-name { font-size: 2rem; }
 }
+
+/* ============================================================
+   DARK MODE TOGGLE BUTTON
+   ============================================================ */
+.dark-mode-toggle {
+  width: 42px; height: 42px;
+  border-radius: 50%;
+  border: 2px solid rgba(79,70,229,.2);
+  background: rgba(255,255,255,.5);
+  backdrop-filter: blur(8px);
+  color: var(--coffee-dark);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: all .35s var(--bounce);
+  position: relative;
+  overflow: hidden;
+}
+.dark-mode-toggle:hover {
+  background: var(--grad-primary);
+  color: #fff;
+  border-color: transparent;
+  transform: rotate(20deg) scale(1.1);
+  box-shadow: 0 4px 20px var(--coral-glow);
+}
+.dark-mode-toggle i {
+  transition: transform .4s var(--bounce);
+}
+.dark-mode-toggle:hover i {
+  transform: rotate(-20deg);
+}
+
+/* ============================================================
+   DARK MODE THEME
+   ============================================================ */
+body.dark-mode {
+  --bg:           #0f0d1a;
+  --bg-alt:       #161227;
+  --bg-card:      rgba(22,18,39,.8);
+  --coffee:       #818cf8;
+  --coffee-dark:  #c7d2fe;
+  --coffee-light: #a5b4fc;
+
+  --coral:        #818cf8;
+  --coral-glow:   rgba(129,140,248,.25);
+  --teal:         #22d3ee;
+  --teal-glow:    rgba(34,211,238,.2);
+  --violet:       #a78bfa;
+  --violet-glow:  rgba(167,139,250,.2);
+
+  --text:         #e2e8f0;
+  --text-light:   #c7d2fe;
+  --text-muted:   #94a3b8;
+  --border:       rgba(129,140,248,.15);
+  --white:        #ffffff;
+
+  --shadow-sm:   0  2px 10px rgba(0,0,0,.25);
+  --shadow-md:   0  8px 30px rgba(0,0,0,.35);
+  --shadow-lg:   0 20px 60px rgba(0,0,0,.4);
+  --shadow-glow: 0  0  40px rgba(129,140,248,.2);
+}
+
+/* Navbar dark */
+body.dark-mode .navbar {
+  background: rgba(15,13,26,.75);
+  border-bottom-color: rgba(129,140,248,.1);
+}
+body.dark-mode .navbar.scrolled {
+  background: rgba(15,13,26,.92);
+  box-shadow: 0 4px 30px rgba(0,0,0,.4);
+}
+
+/* Dark mode toggle button in dark mode */
+body.dark-mode .dark-mode-toggle {
+  background: rgba(129,140,248,.15);
+  border-color: rgba(129,140,248,.3);
+  color: #fbbf24;
+}
+body.dark-mode .dark-mode-toggle:hover {
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  color: #1e1b4b;
+  border-color: transparent;
+}
+
+/* Nav link dark */
+body.dark-mode .nav-link:hover {
+  background: rgba(129,140,248,.12);
+}
+
+/* Glass cards dark */
+body.dark-mode .glass-card {
+  background: rgba(22,18,39,.65);
+  border-color: rgba(129,140,248,.12);
+}
+body.dark-mode .glass-card::before {
+  background: linear-gradient(135deg, rgba(129,140,248,.25), rgba(34,211,238,.1), rgba(255,255,255,.03));
+}
+
+/* Highlight cards dark */
+body.dark-mode .highlight-card {
+  background: rgba(22,18,39,.6);
+  border-color: rgba(129,140,248,.12);
+}
+
+/* Hero dark */
+body.dark-mode .hero {
+  background: linear-gradient(160deg, #0f0d1a 0%, #1e1338 40%, #151030 100%);
+}
+
+/* Even sections dark */
+body.dark-mode .section:nth-child(even):not(.cv) {
+  background: var(--bg-alt);
+}
+
+/* Hero image in dark */
+body.dark-mode .hero-image-wrapper img {
+  border-color: rgba(129,140,248,.3);
+  box-shadow: 0 20px 60px rgba(0,0,0,.4), 0 0 40px var(--coral-glow);
+}
+body.dark-mode .hero-status {
+  background: rgba(22,18,39,.9);
+  box-shadow: var(--shadow-md);
+}
+
+/* Skill chips dark */
+body.dark-mode .skill-chip {
+  background: rgba(22,18,39,.55);
+  border-color: rgba(129,140,248,.1);
+}
+
+/* Form inputs dark */
+body.dark-mode input,
+body.dark-mode textarea {
+  background: rgba(15,13,26,.6) !important;
+  border-color: rgba(129,140,248,.15) !important;
+  color: var(--text) !important;
+}
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+  color: var(--text-muted) !important;
+}
+body.dark-mode input:focus,
+body.dark-mode textarea:focus {
+  border-color: var(--coral) !important;
+  box-shadow: 0 0 0 3px var(--coral-glow) !important;
+}
+
+/* Socials dark */
+body.dark-mode .hero-socials a {
+  background: rgba(22,18,39,.6);
+  border-color: rgba(129,140,248,.15);
+}
+
+/* Scroll indicator dark */
+body.dark-mode .scroll-mouse {
+  border-color: var(--coffee-light);
+}
+
+/* Page loader dark */
+body.dark-mode .page-loader {
+  background: #0f0d1a;
+}
+
+/* Footer dark */
+body.dark-mode .footer {
+  background: #0a0815;
+}
+
+/* CV section dark */
+body.dark-mode .cv {
+  background: var(--bg);
+}
+body.dark-mode .cv-container {
+  background: rgba(22,18,39,.65);
+}
+
+/* Mobile nav menu dark */
+@media (max-width: 768px) {
+  body.dark-mode .nav-menu {
+    background: rgba(15,13,26,.97);
+    border-left-color: rgba(129,140,248,.1);
+  }
+}
