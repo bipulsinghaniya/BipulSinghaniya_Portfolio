@@ -15,6 +15,13 @@ Full-stack developer focused on building scalable backend systems, REST APIs, an
 
 ## 📌 Projects
 
+### 🔹 AlgoJudge Coding Platform
+- Built an online judge system supporting code execution and evaluation
+- Implemented secure code execution using isolated environments
+- Designed REST APIs for submissions and result evaluation
+- Optimized performance using efficient algorithms and data structures
+---
+
 ### 🔹 LPUQuora Platform
 - Built a community-based Q&A platform similar to Quora
 - Implemented user authentication and question-answer system
@@ -22,15 +29,6 @@ Full-stack developer focused on building scalable backend systems, REST APIs, an
 - Ensured scalable backend architecture for handling multiple users
 
 ---
-
-### 🔹 AlgoJudge Coding Platform
-- Built an online judge system supporting code execution and evaluation
-- Implemented secure code execution using isolated environments
-- Designed REST APIs for submissions and result evaluation
-- Optimized performance using efficient algorithms and data structures
-
----
-
 ### 🔹 UniNotes Platform
 - Developed a full-stack notes platform with authentication
 - Implemented JWT authentication using httpOnly cookies
